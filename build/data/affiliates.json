@@ -161,6 +161,326 @@
         { "q": "Which 80C investment gives the highest returns?", "a": "ELSS mutual funds have historically delivered the highest returns among all 80C investments at 12-18% CAGR over 5-year periods. However, these are market-linked and not guaranteed. For guaranteed returns, SSY leads at 8.2%, followed by NPS at 8-10%, NSC at 7.7%, and PPF at 7.1% \u2014 all government-backed." },
         { "q": "What is the safest tax saving investment under 80C?", "a": "PPF, NSC, SSY, and EPF are the safest 80C investments as they are all backed by the Government of India with guaranteed returns. Among these, PPF and SSY offer the best tax efficiency due to their EEE (Exempt-Exempt-Exempt) status, where deposits, interest, and maturity are all completely tax-free." }
       ]
+    },
+    {
+      "slug": "ppf-withdrawal-rules",
+      "title": "PPF Withdrawal Rules 2026 — Partial & Full Withdrawal Guide",
+      "description": "Complete guide to PPF withdrawal rules in 2026. Learn about partial withdrawal from Year 7, loan against PPF from Year 3-6, premature closure, and extension rules with formulas.",
+      "keywords": "ppf withdrawal rules, ppf partial withdrawal, ppf loan rules, ppf premature closure, ppf extension rules, ppf withdrawal formula, ppf withdrawal after 15 years",
+      "heroTitle": "PPF Withdrawal Rules",
+      "heroSub": "Everything you need to know about withdrawing money from your PPF account. Partial withdrawal, loans, premature closure, and extension rules — all explained.",
+      "contentType": "guide",
+      "ctaText": "Calculate PPF Maturity",
+      "ctaLink": "/",
+      "guideContent": [
+        {
+          "type": "h2",
+          "text": "PPF 15-Year Lock-in Period Explained"
+        },
+        {
+          "type": "p",
+          "text": "The Public Provident Fund has a mandatory lock-in period of 15 financial years from the end of the financial year in which the first deposit was made. This means if you open a PPF account and make your first deposit in July 2024 (FY 2024-25), the account matures at the end of FY 2039-40, that is on March 31, 2040."
+        },
+        {
+          "type": "p",
+          "text": "During this 15-year period, you cannot withdraw the entire balance. However, you are not completely locked in — PPF rules allow partial withdrawals from the 7th financial year and loans from the 3rd to 6th financial year. Understanding these provisions helps you plan your liquidity needs without closing your PPF account."
+        },
+        {
+          "type": "h2",
+          "text": "Partial Withdrawal from Year 7 — Rules & Formula"
+        },
+        {
+          "type": "p",
+          "text": "You become eligible for partial withdrawal from your PPF account starting from the 7th financial year of account opening. The amount you can withdraw is limited by a specific formula set by the government."
+        },
+        {
+          "type": "h3",
+          "text": "Partial Withdrawal Formula"
+        },
+        {
+          "type": "p",
+          "text": "Maximum withdrawal allowed = 50% of the balance at the end of the 4th preceding financial year OR 50% of the balance at the end of the immediately preceding financial year, whichever is lower."
+        },
+        {
+          "type": "p",
+          "text": "For example, if you want to make a partial withdrawal in FY 2030-31 (your 7th year), you can withdraw up to 50% of the balance as on March 31, 2027 (end of the 4th preceding year) or 50% of the balance as on March 31, 2030 (end of the preceding year) — whichever is lower."
+        },
+        {
+          "type": "h3",
+          "text": "Partial Withdrawal Example"
+        },
+        {
+          "type": "p",
+          "text": "Suppose your PPF balance at the end of Year 4 (the 4th preceding year) was Rs 3,50,000 and your balance at the end of Year 6 (the immediately preceding year) was Rs 6,00,000. Your maximum partial withdrawal would be:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "50% of Year 4 balance: 50% x Rs 3,50,000 = Rs 1,75,000",
+            "50% of Year 6 balance: 50% x Rs 6,00,000 = Rs 3,00,000",
+            "Maximum you can withdraw: Rs 1,75,000 (the lower of the two)"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Key rules for partial withdrawal: Only one partial withdrawal is allowed per financial year. The withdrawal is completely tax-free. You need to submit Form C at your bank or post office to request a partial withdrawal. No reason needs to be provided for the withdrawal."
+        },
+        {
+          "type": "h2",
+          "text": "Loan Against PPF — Year 3 to Year 6"
+        },
+        {
+          "type": "p",
+          "text": "From the 3rd financial year to the 6th financial year of your PPF account, you can take a loan against your PPF balance. This is different from a partial withdrawal — you borrow against your own balance and must repay with interest."
+        },
+        {
+          "type": "h3",
+          "text": "Loan Rules"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Eligibility period: 3rd to 6th financial year only (after the 6th year, partial withdrawal replaces the loan facility).",
+            "Maximum loan: 25% of the balance at the end of the 2nd preceding financial year.",
+            "Interest rate: 1% per annum above the prevailing PPF interest rate. If PPF rate is 7.1%, loan rate is 8.1%.",
+            "Repayment: Must be repaid within 36 months (3 years). Interest is charged for the entire period.",
+            "Second loan: A second loan can be taken only after fully repaying the first loan.",
+            "Default: If the loan is not repaid within 36 months, the outstanding amount is treated as a withdrawal and deducted from the PPF balance at maturity."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Note: The loan facility against PPF is generally not recommended because you are paying 8.1% interest to borrow your own money that is only earning 7.1%. If you need liquidity, waiting until Year 7 for a tax-free partial withdrawal is a better option financially."
+        },
+        {
+          "type": "h2",
+          "text": "Premature Closure Rules"
+        },
+        {
+          "type": "p",
+          "text": "Premature closure (withdrawing the entire balance before 15 years) was not allowed until recently. The government now permits premature closure of PPF under specific conditions, but with a penalty."
+        },
+        {
+          "type": "h3",
+          "text": "Conditions for Premature Closure"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Allowed only after completion of 5 financial years from the year of account opening.",
+            "Permitted only for specific reasons: life-threatening illness of the account holder, spouse, or dependent children; higher education of the account holder or dependent children.",
+            "Penalty: 1% reduction in interest rate for the entire duration. If PPF rate was 7.1% throughout, you would receive interest recalculated at 6.1% from the date of opening to the date of closure.",
+            "Required documents: Medical reports for illness, admission letter and fee receipts for education.",
+            "PPF accounts of minors can be prematurely closed for the child's education or medical treatment only."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The 1% penalty on premature closure can be significant. On a PPF account with Rs 15 lakh balance after 10 years, the penalty could mean losing Rs 80,000 to Rs 1,00,000 in interest. Always consider partial withdrawal or loan options before resorting to premature closure."
+        },
+        {
+          "type": "h2",
+          "text": "PPF Extension Rules After 15 Years"
+        },
+        {
+          "type": "p",
+          "text": "After the 15-year maturity, you have three options for your PPF account:"
+        },
+        {
+          "type": "h3",
+          "text": "Option 1: Full Withdrawal at Maturity"
+        },
+        {
+          "type": "p",
+          "text": "Withdraw the entire balance. The maturity amount (principal + interest) is completely tax-free under EEE status. Submit Form C to your bank or post office. You can continue using the PPF account's remaining balance even after partial maturity withdrawal."
+        },
+        {
+          "type": "h3",
+          "text": "Option 2: Extension Without Fresh Contributions"
+        },
+        {
+          "type": "p",
+          "text": "Continue the PPF account in 5-year blocks without making any new deposits. Your existing balance continues to earn interest at the prevailing PPF rate. You can make one withdrawal per year of any amount up to the full balance. This option is ideal if you want to earn tax-free interest on your accumulated corpus without adding more money."
+        },
+        {
+          "type": "h3",
+          "text": "Option 3: Extension With Fresh Contributions"
+        },
+        {
+          "type": "p",
+          "text": "Extend the PPF account in 5-year blocks and continue depositing up to Rs 1,50,000 per year. Deposits continue to qualify for Section 80C deduction. One partial withdrawal is allowed per year, limited to 60% of the balance at the start of each extension block. Submit Form H within 1 year of maturity to opt for this extension."
+        },
+        {
+          "type": "p",
+          "text": "Important: If you do not submit any form or make any withdrawal within 1 year of maturity, the account is automatically extended without fresh contributions. You can still withdraw freely but will not be able to switch to the 'with contributions' option later."
+        }
+      ],
+      "faqs": [
+        { "q": "Can I withdraw from PPF before 15 years?", "a": "Partial withdrawal is allowed from the 7th financial year onward, up to 50% of the balance at the end of the 4th preceding year. Before that, from Year 3 to Year 6, you can only take a loan (up to 25% of balance). Premature full closure is allowed only after 5 years for medical emergencies or higher education, with a 1% interest penalty." },
+        { "q": "Is PPF withdrawal tax-free?", "a": "Yes, all withdrawals from PPF are completely tax-free — both partial withdrawals during the term and the full maturity withdrawal. PPF has EEE (Exempt-Exempt-Exempt) status under the Income Tax Act, meaning the deposits, interest earned, and withdrawals are all exempt from tax. This makes PPF one of the most tax-efficient investments in India." },
+        { "q": "How many times can I withdraw from PPF in a year?", "a": "During the active PPF tenure (before maturity), you can make only one partial withdrawal per financial year from the 7th year onward. After maturity, if you extend without contributions, you can make one withdrawal per year of any amount. If you extend with contributions, one partial withdrawal per year up to 60% of the opening balance of the 5-year block is allowed." },
+        { "q": "What happens to PPF after 15 years if I do nothing?", "a": "If you do not submit any extension form or withdrawal request within 1 year of maturity, the account is automatically extended in 5-year blocks without fresh contributions. Your balance continues to earn interest at the prevailing PPF rate. You can make withdrawals at any time, but you lose the option to make fresh deposits and claim 80C deductions." },
+        { "q": "Can I close PPF for my child's education?", "a": "Yes, premature closure of PPF is allowed for higher education of the account holder or dependent children, but only after completion of 5 financial years. You need to provide admission letter and fee structure from the educational institution. A 1% penalty on interest rate applies for the entire tenure. For minors' PPF accounts, premature closure is allowed only for the child's education or medical treatment." }
+      ]
+    },
+    {
+      "slug": "ppf-tax-benefits-explained",
+      "title": "PPF Tax Benefits — EEE Status Explained (2026)",
+      "description": "Complete guide to PPF tax benefits in 2026. Understand EEE (Exempt-Exempt-Exempt) status, Section 80C deduction, tax-free interest, and how PPF beats taxable FD in post-tax returns.",
+      "keywords": "ppf tax benefits, ppf eee status, ppf section 80c, ppf tax free interest, ppf vs fd post tax returns, ppf tax exemption, ppf tax saving",
+      "heroTitle": "PPF Tax Benefits Explained",
+      "heroSub": "PPF enjoys the coveted EEE status — your deposits, interest, and maturity are ALL tax-free. Understand the complete tax advantage with examples.",
+      "contentType": "guide",
+      "ctaText": "Calculate PPF Returns",
+      "ctaLink": "/",
+      "guideContent": [
+        {
+          "type": "h2",
+          "text": "What is EEE Status? — The Triple Tax Exemption"
+        },
+        {
+          "type": "p",
+          "text": "EEE stands for Exempt-Exempt-Exempt, which is the highest level of tax benefit available for any investment in India. PPF is one of the very few investments that enjoys complete EEE status. Here is what each 'E' means:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "First Exempt (Investment): Your PPF deposits qualify for tax deduction under Section 80C, up to Rs 1,50,000 per financial year. This means the amount you invest in PPF reduces your taxable income.",
+            "Second Exempt (Returns): The interest earned on your PPF balance every year is completely tax-free. Unlike FD interest which is taxed at your slab rate, PPF interest is never taxed — not even TDS is applicable.",
+            "Third Exempt (Maturity): When you withdraw the maturity amount (or any partial withdrawal), the entire amount is completely tax-free. No capital gains tax, no income tax, no tax of any kind."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "This triple tax exemption makes PPF one of the most tax-efficient investments in India. Very few instruments — only PPF, EPF, SSY (Sukanya Samriddhi Yojana), and insurance (under certain conditions) — enjoy complete EEE status."
+        },
+        {
+          "type": "h2",
+          "text": "Section 80C Deduction on PPF Deposits"
+        },
+        {
+          "type": "p",
+          "text": "Under Section 80C of the Income Tax Act, you can claim a deduction of up to Rs 1,50,000 per financial year on your PPF contributions. This deduction directly reduces your taxable income."
+        },
+        {
+          "type": "h3",
+          "text": "Tax Savings from PPF Under 80C"
+        },
+        {
+          "type": "table",
+          "headers": ["Tax Slab (Old Regime)", "PPF Investment", "Tax Saved", "Effective Return at 7.1%"],
+          "rows": [
+            ["5% slab", "Rs 1,50,000", "Rs 7,800 (5% + 4% cess)", "Effective 12.3%"],
+            ["20% slab", "Rs 1,50,000", "Rs 31,200 (20% + 4% cess)", "Effective 27.9%"],
+            ["30% slab", "Rs 1,50,000", "Rs 46,800 (30% + 4% cess)", "Effective 38.3%"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The effective return shown above includes the tax saved on your investment. For a person in the 30% tax bracket, investing Rs 1,50,000 in PPF saves Rs 46,800 in taxes. Combined with the 7.1% interest income (which is also tax-free), the effective first-year return is much higher than 7.1%."
+        },
+        {
+          "type": "p",
+          "text": "Important: The Section 80C deduction is available only under the Old Tax Regime. If you have opted for the New Tax Regime (default from FY 2023-24), you cannot claim 80C deductions on PPF investments. However, the interest earned and maturity withdrawal remain tax-free under both regimes."
+        },
+        {
+          "type": "h2",
+          "text": "PPF Interest is Tax-Free — No TDS, No ITR Declaration"
+        },
+        {
+          "type": "p",
+          "text": "The interest earned on PPF is completely exempt from income tax under Section 10 of the Income Tax Act. This has several important implications:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "No TDS is deducted on PPF interest at any point — unlike bank FDs where 10% TDS is deducted if interest exceeds Rs 40,000/year.",
+            "You do not need to declare PPF interest as income in your ITR. It is exempt income and does not add to your taxable income.",
+            "The interest compounds tax-free every year, meaning your entire balance (principal + accumulated interest) earns interest without any tax leakage.",
+            "At the current rate of 7.1%, the post-tax return from PPF is also 7.1% — there is no erosion due to taxes."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "PPF Maturity is Tax-Free — Complete Exemption"
+        },
+        {
+          "type": "p",
+          "text": "When your PPF account matures after 15 years (or any extension period), the entire maturity amount — including all accumulated interest — is completely tax-free. This is the third 'E' in EEE status."
+        },
+        {
+          "type": "p",
+          "text": "For example, if you invest Rs 1,50,000 per year for 15 years at 7.1% interest, your maturity amount is approximately Rs 40,68,209. Out of this, Rs 22,50,000 is your total deposits and Rs 18,18,209 is interest earned. The entire Rs 40,68,209 is tax-free in your hands. Compare this with an FD where the Rs 18,18,209 interest would be taxed at your slab rate — potentially costing you Rs 5,45,463 in taxes at the 30% slab."
+        },
+        {
+          "type": "h2",
+          "text": "PPF vs Taxable FD — Post-Tax Returns Comparison"
+        },
+        {
+          "type": "p",
+          "text": "The true advantage of PPF becomes clear when you compare post-tax returns with a taxable Fixed Deposit. While FDs may offer similar or slightly higher pre-tax rates, PPF wins decisively after taxes."
+        },
+        {
+          "type": "table",
+          "headers": ["Parameter", "PPF (7.1%)", "Bank FD (7.5%)", "Difference"],
+          "rows": [
+            ["Pre-tax Rate", "7.1%", "7.5%", "FD is 0.4% higher"],
+            ["Post-tax Rate (5% slab)", "7.1% (tax-free)", "7.12%", "Almost same"],
+            ["Post-tax Rate (20% slab)", "7.1% (tax-free)", "6.00%", "PPF is 1.1% higher"],
+            ["Post-tax Rate (30% slab)", "7.1% (tax-free)", "5.25%", "PPF is 1.85% higher"],
+            ["Tax on Rs 18L interest (30% slab)", "Rs 0", "Rs 5,61,600", "PPF saves Rs 5.6L"],
+            ["15Y Maturity on Rs 1.5L/yr", "Rs 40,68,209 (all tax-free)", "Rs 35,83,582 (after tax)", "PPF gives Rs 4.85L more"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For investors in the 20% and 30% tax brackets, PPF delivers significantly higher post-tax returns than FDs despite having a lower pre-tax rate. The tax-free compounding effect becomes more powerful over longer time periods."
+        },
+        {
+          "type": "h2",
+          "text": "Who Benefits Most from PPF Tax Benefits?"
+        },
+        {
+          "type": "p",
+          "text": "While PPF is beneficial for everyone, certain investors benefit the most from its tax advantages:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "High-income earners (30% tax bracket): They save the most in taxes — up to Rs 46,800 per year on the investment itself, plus all interest is tax-free. For them, PPF's effective return far exceeds any FD.",
+            "Conservative investors: Those who want guaranteed, risk-free returns without market exposure. PPF is backed by the Government of India with zero default risk.",
+            "Long-term planners: PPF rewards patience. The 15-year lock-in, combined with tax-free compounding, creates substantial wealth. Rs 1,50,000/year for 15 years at 7.1% creates Rs 40.68 lakh tax-free.",
+            "Retirement planners: PPF can be extended in 5-year blocks indefinitely after maturity. This makes it an excellent retirement income tool where your corpus earns tax-free interest forever.",
+            "Parents saving for children: You can open a PPF account for a minor child and claim 80C deduction. The child's PPF runs for 15 years from their account opening date, perfectly aligning with education funding timelines."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "PPF Tax Benefits Under New vs Old Tax Regime"
+        },
+        {
+          "type": "table",
+          "headers": ["Tax Benefit", "Old Regime", "New Regime"],
+          "rows": [
+            ["Section 80C Deduction on PPF investment", "Yes (up to Rs 1.5L)", "No"],
+            ["Interest earned is tax-free", "Yes", "Yes"],
+            ["Maturity withdrawal is tax-free", "Yes", "Yes"],
+            ["Partial withdrawal is tax-free", "Yes", "Yes"],
+            ["Overall recommendation", "Maximum benefit (invest + earn + withdraw all tax-free)", "Still beneficial (earn + withdraw tax-free, but no deduction on investment)"]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Even under the New Tax Regime where you cannot claim the 80C deduction, PPF remains attractive because the interest and maturity are still completely tax-free. For investors who have already exhausted other 80C options or are under the new regime, PPF still offers the best risk-free post-tax return available in India."
+        }
+      ],
+      "faqs": [
+        { "q": "Is PPF interest taxable under the new tax regime?", "a": "No, PPF interest is completely tax-free under both the old and new tax regimes. The exemption on PPF interest under Section 10 of the Income Tax Act applies regardless of which tax regime you choose. The only difference is that under the new regime, you cannot claim Section 80C deduction on your PPF deposits." },
+        { "q": "How much tax can I save by investing in PPF?", "a": "If you invest the maximum Rs 1,50,000 per year in PPF under the old tax regime, you can save up to Rs 46,800 in taxes annually (30% slab + 4% cess). Over 15 years, that is Rs 7,02,000 in tax savings on deposits alone. Additionally, all interest earned (approximately Rs 18.18 lakh on Rs 1.5L/year for 15 years) is also completely tax-free." },
+        { "q": "Is PPF better than tax-saving FD for tax benefits?", "a": "Yes, PPF is significantly better than tax-saving FD for tax benefits. Both qualify for 80C deduction, but PPF interest is completely tax-free (EEE status) while FD interest is fully taxable at your slab rate. A 7.1% PPF effectively beats a 7.5% FD for anyone in the 20% or higher tax bracket. PPF has a 15-year lock-in vs 5 years for tax-saving FD." },
+        { "q": "Do I need to show PPF interest in my income tax return?", "a": "No, you do not need to declare PPF interest as taxable income in your ITR. PPF interest is exempt income under Section 10. However, some tax experts recommend disclosing it under 'Exempt Income' in your ITR for transparency, though it is not mandatory. No TDS is deducted on PPF interest, and it does not add to your taxable income." },
+        { "q": "Can I claim 80C deduction on PPF deposits for my child?", "a": "Yes, if you deposit money in a PPF account opened in your minor child's name, you can claim Section 80C deduction on those deposits. However, the combined 80C limit for your own PPF and your child's PPF is Rs 1,50,000 per financial year. The child's PPF account interest and maturity are also completely tax-free, just like an adult's PPF account." }
+      ]
     }
   ]
 }
