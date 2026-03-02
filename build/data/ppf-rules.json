@@ -1,0 +1,60 @@
+{
+  "currentRate": 7.1,
+  "rateEffectiveFrom": "Q4 FY 2024-25",
+  "minDeposit": 500,
+  "maxDeposit": 150000,
+  "lockInPeriod": 15,
+  "partialWithdrawalFrom": 7,
+  "loanFrom": 3,
+  "loanTo": 6,
+  "loanInterestRate": 1,
+  "extensionBlock": 5,
+  "section80CLimit": 150000,
+  "taxBenefit": "EEE",
+  "historicalRates": [
+    { "period": "Apr 2020 – Present", "rate": 7.1 },
+    { "period": "Oct 2019 – Mar 2020", "rate": 7.9 },
+    { "period": "Jul 2019 – Sep 2019", "rate": 7.9 },
+    { "period": "Apr 2019 – Jun 2019", "rate": 8.0 },
+    { "period": "Oct 2018 – Mar 2019", "rate": 8.0 },
+    { "period": "Jan 2018 – Sep 2018", "rate": 7.6 },
+    { "period": "Jul 2017 – Dec 2017", "rate": 7.8 },
+    { "period": "Apr 2017 – Jun 2017", "rate": 7.9 },
+    { "period": "Oct 2016 – Mar 2017", "rate": 8.0 },
+    { "period": "Apr 2016 – Sep 2016", "rate": 8.1 },
+    { "period": "Apr 2015 – Mar 2016", "rate": 8.7 },
+    { "period": "Apr 2014 – Mar 2015", "rate": 8.7 },
+    { "period": "Apr 2013 – Mar 2014", "rate": 8.7 },
+    { "period": "Apr 2012 – Mar 2013", "rate": 8.8 },
+    { "period": "Dec 2011 – Mar 2012", "rate": 8.6 }
+  ],
+  "eligibility": [
+    "Any Indian resident individual",
+    "Account can be opened in the name of a minor by parent/guardian",
+    "NRIs who opened account as residents can continue till maturity",
+    "HUFs and trusts are NOT eligible (since 2005)"
+  ],
+  "documentsRequired": [
+    "PPF account opening form",
+    "Identity proof (Aadhaar, PAN, Passport, Voter ID)",
+    "Address proof",
+    "Passport-sized photographs",
+    "Nomination form"
+  ],
+  "whereToOpen": [
+    "Post Office",
+    "State Bank of India (SBI)",
+    "Bank of Baroda",
+    "Bank of India",
+    "Canara Bank",
+    "Central Bank of India",
+    "Indian Bank",
+    "Punjab National Bank",
+    "Union Bank of India",
+    "ICICI Bank",
+    "HDFC Bank",
+    "Axis Bank",
+    "Kotak Mahindra Bank",
+    "IDBI Bank"
+  ]
+}

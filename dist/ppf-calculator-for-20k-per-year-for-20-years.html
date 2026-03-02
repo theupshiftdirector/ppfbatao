@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>₹20K/Year PPF for 20 Years — Maturity ₹8,87,772 | PPF Batao</title>
+    <meta name="description" content="Invest ₹20K per year in PPF for 20 years at 7.1%. Maturity = ₹8,87,772. Tax-free interest earned: ₹4,87,772. Free PPF calculator with year-wise breakdown.">
+    <meta name="keywords" content="ppf calculator ₹20K, ppf maturity 20 years, ppf returns calculator, ppf investment calculator">
+    <link rel="canonical" href="https://ppfbatao.com/ppf-calculator-for-20k-per-year-for-20-years">
+    <meta property="og:title" content="₹20K/Year PPF for 20 Years — Maturity ₹8,87,772 | PPF Batao">
+    <meta property="og:description" content="Invest ₹20K per year in PPF for 20 years at 7.1%. Maturity = ₹8,87,772. Tax-free interest earned: ₹4,87,772. Free PPF calculator with year-wise breakdown.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ppfbatao.com/{{CANONICAL_PATH}}">
+    <meta property="og:site_name" content="PPF Batao">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="₹20K/Year PPF for 20 Years — Maturity ₹8,87,772 | PPF Batao">
+    <meta name="twitter:description" content="Invest ₹20K per year in PPF for 20 years at 7.1%. Maturity = ₹8,87,772. Tax-free interest earned: ₹4,87,772. Free PPF calculator with year-wise breakdown.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8235932614579966" crossorigin="anonymous"></script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ppfbatao.com/"},{"@type":"ListItem","position":2,"name":"PPF Calculator","item":"https://ppfbatao.com/ppf-calculator"},{"@type":"ListItem","position":3,"name":"₹20K/yr × 20 Years"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the maturity value of ₹20,000 yearly PPF investment for 20 years?","acceptedAnswer":{"@type":"Answer","text":"If you invest ₹20,000 per year in PPF at 7.1% for 20 years, your maturity value will be ₹8,87,772. This includes ₹4,00,000 total deposits and ₹4,87,772 in tax-free interest."}},{"@type":"Question","name":"How much tax can I save with ₹20,000 PPF investment?","acceptedAnswer":{"@type":"Answer","text":"Deposits up to ₹1,50,000 per year qualify for Section 80C deduction. If you are in the 31.2% tax bracket (highest old regime), you can save approximately ₹6,240 in taxes every year."}},{"@type":"Question","name":"How much should I invest monthly to deposit ₹20,000 per year in PPF?","acceptedAnswer":{"@type":"Answer","text":"To invest ₹20,000 per year in PPF, you need to set aside approximately ₹1,667 per month. You can make deposits in up to 12 installments per financial year."}},{"@type":"Question","name":"What happens after 20 years PPF maturity?","acceptedAnswer":{"@type":"Answer","text":"A 20-year PPF investment means extending beyond the initial 15-year lock-in in 5-year blocks. After maturity, you can withdraw the full amount tax-free or continue extending in 5-year blocks."}},{"@type":"Question","name":"Is PPF investment of ₹20,000/year better than FD?","acceptedAnswer":{"@type":"Answer","text":"At 7.1% tax-free return, PPF significantly outperforms FDs for long-term investment. A comparable FD would need to offer 10.3% pre-tax returns (for 31.2% tax bracket) to match PPF's after-tax return. Over 20 years, this compounding advantage is substantial."}}]}</script>
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --card: #141416;
+            --card-hover: #1a1a1e;
+            --border: #2a2a2e;
+            --text: #e8e8ec;
+            --text-muted: #8a8a94;
+            --accent: #f97316;
+            --accent-dim: #f9731620;
+            --green: #22c55e;
+            --red: #ef4444;
+            --input-bg: #1a1a1e;
+            --blue: #38bdf8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+            z-index: 100;
+            backdrop-filter: blur(20px);
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .badge {
+            background: var(--accent-dim);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .breadcrumb a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover { color: var(--accent); }
+        .breadcrumb span { color: var(--text-muted); margin: 0 6px; }
+
+        /* Page Hero */
+        .page-hero {
+            text-align: center;
+            padding: 40px 24px 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .page-hero h1 .hl { color: var(--accent); }
+
+        .page-hero p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Calculator Section */
+        .calc-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .panel-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .panel-title .num {
+            background: var(--accent);
+            color: #000;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent);
+            margin: 24px 0 12px;
+        }
+
+        .section-label:first-of-type { margin-top: 0; }
+
+        .form-group { margin-bottom: 16px; }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 14px;
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .input-with-unit { position: relative; }
+        .input-with-unit .unit {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 14px;
+            pointer-events: none;
+        }
+        .input-with-unit .unit-right { left: auto; right: 14px; }
+        .input-with-unit input { padding-left: 30px; }
+        .input-with-unit .input-rate { padding-left: 14px; padding-right: 30px; }
+
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+        .btn-calculate {
+            width: 100%;
+            padding: 16px;
+            background: var(--accent);
+            color: #000;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: transform 0.1s, opacity 0.2s;
+        }
+        .btn-calculate:hover { opacity: 0.9; transform: scale(0.995); }
+        .btn-calculate:active { transform: scale(0.98); }
+
+        /* Result Cards */
+        .result-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+        .result-card {
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+        }
+        .result-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 6px; }
+        .result-card .value { font-size: 18px; font-weight: 700; color: var(--text); }
+        .result-card.highlight { border-color: var(--accent); background: var(--accent-dim); }
+        .result-card.highlight .value { color: var(--accent); }
+
+        /* Chart */
+        .chart-section {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 24px;
+            padding: 20px;
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .chart-container { position: relative; width: 160px; height: 160px; flex-shrink: 0; }
+        .chart-container canvas { display: block; }
+        .chart-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+        .chart-center .total-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
+        .chart-center .total-value { font-size: 14px; font-weight: 700; color: var(--text); }
+        .chart-legend { flex: 1; }
+        .legend-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+        .legend-item + .legend-item { border-top: 1px solid var(--border); }
+        .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+        .legend-info { flex: 1; }
+        .legend-info .legend-label { font-size: 12px; color: var(--text-muted); }
+        .legend-info .legend-value { font-size: 15px; font-weight: 600; color: var(--text); }
+        .legend-percent { font-size: 13px; font-weight: 600; color: var(--text-muted); }
+
+        /* Table */
+        .table-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .table-title { font-size: 15px; font-weight: 600; }
+        .table-container { max-height: 400px; overflow-y: auto; border: 1px solid var(--border); border-radius: 10px; }
+        .amort-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .amort-table thead th { position: sticky; top: 0; background: var(--card); z-index: 1; }
+        .amort-table th { text-align: right; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .amort-table th:first-child { text-align: left; }
+        .amort-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text); text-align: right; font-variant-numeric: tabular-nums; }
+        .amort-table td:first-child { text-align: left; color: var(--text-muted); }
+        .amort-table tbody tr:last-child td { border-bottom: none; }
+        .amort-table tbody tr:hover td { background: var(--input-bg); }
+
+        .btn-download {
+            width: 100%;
+            padding: 14px;
+            background: var(--green);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 16px;
+            transition: opacity 0.2s;
+        }
+        .btn-download:hover { opacity: 0.85; }
+
+        /* Info Section */
+        .info-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        .info-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .info-section p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .info-section ul, .info-section ol {
+            color: var(--text-muted);
+            padding-left: 20px;
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        .info-section li { margin-bottom: 6px; }
+
+        /* Key Details Grid */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .detail-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+        }
+        .detail-item .d-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+        .detail-item .d-value { font-size: 16px; font-weight: 600; color: var(--text); }
+        .detail-item .d-value.accent { color: var(--accent); }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        .comparison-table th {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--border);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .comparison-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+        .comparison-table tbody tr:hover td { background: var(--card); }
+        .comparison-table .amt-col { font-weight: 500; }
+        .comparison-table .emi-col { color: var(--accent); font-weight: 600; }
+
+        /* Links Grid */
+        .links-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 24px 40px;
+        }
+        .links-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 8px;
+        }
+        .links-grid a {
+            display: block;
+            padding: 12px 16px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+        .links-grid a:hover { border-color: var(--accent); }
+        .links-grid a .link-sub { display: block; font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+        /* FAQ */
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 24px 60px;
+        }
+        .faq-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            background: var(--card);
+        }
+        .faq-item h3 { font-size: 15px; margin-bottom: 8px; }
+        .faq-item p { font-size: 14px; color: var(--text-muted); margin: 0; }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+        .footer a { color: var(--accent); text-decoration: none; }
+
+        /* Scrollbar */
+        .table-container::-webkit-scrollbar { width: 6px; }
+        .table-container::-webkit-scrollbar-track { background: var(--card); border-radius: 3px; }
+        .table-container::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .calc-section { grid-template-columns: 1fr; }
+            .page-hero h1 { font-size: 28px; }
+            .result-cards { grid-template-columns: 1fr 1fr 1fr; }
+            .result-card .value { font-size: 15px; }
+            .chart-section { flex-direction: column; }
+            .chart-container { width: 140px; height: 140px; }
+            .details-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .result-cards { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .panel { padding: 20px; }
+            .links-grid { grid-template-columns: 1fr; }
+        }
+
+        @media print {
+            body { background: #fff; color: #000; }
+            .header, .page-hero, .form-panel-wrapper, .btn-download, .btn-calculate,
+            .info-section, .links-section, .faq-section, .footer, .chart-section,
+            .result-cards, .breadcrumb { display: none !important; }
+            .calc-section { display: block; }
+            .panel { border: none; padding: 0; background: transparent; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-inner">
+        <a href="/" class="logo">PPF <span>Batao</span></a>
+        <div class="badge">100% Free · Tax-Free Returns</div>
+    </div>
+</header>
+
+<div class="breadcrumb"><a href="/">PPF Batao</a><span>›</span><a href="/ppf-calculator">PPF Calculator</a><span>›</span>₹20K/yr × 20 Years</div>
+
+
+<div class="page-hero">
+    <h1>PPF Calculator: <span class="hl">₹20K/Year</span> for 20 Years</h1>
+    <p>Invest ₹20K yearly in PPF at 7.1% and get ₹8,87,772 tax-free at maturity. That's ₹4,87,772 in interest earned.</p>
+</div><div style="max-width:800px;margin:0 auto;padding:0 24px 20px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div class="calc-section">
+    <div class="form-panel-wrapper">
+        <div class="panel">
+            <div class="panel-title"><div class="num">1</div> Investment Details</div>
+            <div class="section-label">PPF Parameters</div>
+            <div class="form-group">
+                <label>Yearly Deposit (₹)</label>
+                <div class="input-with-unit">
+                    <span class="unit">₹</span>
+                    <input type="text" id="yearlyDeposit" inputmode="numeric" placeholder="1,50,000">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Interest Rate (% per annum)</label>
+                    <div class="input-with-unit">
+                        <input type="number" id="interestRate" class="input-rate" step="0.1" min="0" max="20" placeholder="7.1">
+                        <span class="unit unit-right">%</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Investment Period (Years)</label>
+                    <input type="number" id="tenure" min="15" max="50" placeholder="15">
+                </div>
+            </div>
+            <button class="btn-calculate" onclick="calculate()">Calculate Maturity →</button>
+        </div>
+    </div>
+    <div>
+        <div class="panel" id="resultsPanel">
+            <div class="panel-title"><div class="num">2</div> Maturity Breakdown</div>
+            <div class="result-cards">
+                <div class="result-card highlight">
+                    <div class="label">Maturity Value</div>
+                    <div class="value" id="maturityValue">-</div>
+                </div>
+                <div class="result-card">
+                    <div class="label">Total Interest</div>
+                    <div class="value" id="interestValue">-</div>
+                </div>
+                <div class="result-card">
+                    <div class="label">Total Deposited</div>
+                    <div class="value" id="depositedValue">-</div>
+                </div>
+            </div>
+            <div class="chart-section">
+                <div class="chart-container">
+                    <canvas id="pieChart"></canvas>
+                    <div class="chart-center">
+                        <div class="total-label">Maturity</div>
+                        <div class="total-value" id="chartTotal">-</div>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-dot" style="background:var(--accent)"></div>
+                        <div class="legend-info">
+                            <div class="legend-label">Total Deposited</div>
+                            <div class="legend-value" id="legendDeposited">-</div>
+                        </div>
+                        <div class="legend-percent" id="legendDepositedPct">-</div>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot" style="background:var(--blue)"></div>
+                        <div class="legend-info">
+                            <div class="legend-label">Interest Earned (Tax-Free)</div>
+                            <div class="legend-value" id="legendInterest">-</div>
+                        </div>
+                        <div class="legend-percent" id="legendInterestPct">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-header">
+                <div class="table-title">Year-wise Breakdown</div>
+            </div>
+            <div class="table-container">
+                <table class="amort-table">
+                    <thead id="tableHead"><tr><th>Year</th><th>Deposit</th><th>Interest</th><th>Balance</th></tr></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+            <button class="btn-download" onclick="downloadPDF()">↓ Download PPF Statement (PDF)</button>
+        </div>
+    </div>
+</div>
+<div class="info-section">
+    <h2>PPF Investment of ₹20K/Year for 20 Years</h2>
+    
+<div class="details-grid">
+    <div class="detail-item">
+        <div class="d-label">Current Interest Rate</div>
+        <div class="d-value accent">7.1% p.a.</div>
+    </div>
+    <div class="detail-item">
+        <div class="d-label">Lock-in Period</div>
+        <div class="d-value">15 Years</div>
+    </div>
+    <div class="detail-item">
+        <div class="d-label">Min Deposit/Year</div>
+        <div class="d-value">₹500</div>
+    </div>
+    <div class="detail-item">
+        <div class="d-label">Max Deposit/Year</div>
+        <div class="d-value">₹1,50,000</div>
+    </div>
+    <div class="detail-item">
+        <div class="d-label">Tax Benefit</div>
+        <div class="d-value accent">EEE (Exempt-Exempt-Exempt)</div>
+    </div>
+    <div class="detail-item">
+        <div class="d-label">Section 80C Limit</div>
+        <div class="d-value">₹1,50,000</div>
+    </div>
+</div>
+    <p>If you invest <strong style="color:var(--text)">₹20K</strong> per year (approximately <strong style="color:var(--text)">₹1,667/month</strong>) in PPF at the current rate of 7.1%, your investment will grow to <strong style="color:var(--accent)">₹8,87,772</strong> in 20 years.</p>
+    <ul>
+        <li>Total amount deposited: ₹4,00,000</li>
+        <li>Total interest earned (tax-free): ₹4,87,772</li>
+        <li>Effective wealth multiplier: 2.22x</li>
+        <li>Estimated annual tax savings (30% bracket): ₹6,240</li>
+    </ul>
+
+    <h2>PPF Maturity for ₹20K/Year at Different Tenures</h2>
+    
+<table class="comparison-table">
+    <thead><tr><th>Tenure</th><th>Total Deposited</th><th>Interest Earned</th><th>Maturity Value</th></tr></thead>
+    <tbody><tr><td class="amt-col">15 Years</td><td>₹3,00,000</td><td>₹2,42,428</td><td class="emi-col">₹5,42,428</td></tr><tr><td class="amt-col">20 Years</td><td>₹4,00,000</td><td>₹4,87,772</td><td class="emi-col">₹8,87,772</td></tr><tr><td class="amt-col">25 Years</td><td>₹5,00,000</td><td>₹8,74,403</td><td class="emi-col">₹13,74,403</td></tr><tr><td class="amt-col">30 Years</td><td>₹6,00,000</td><td>₹14,60,123</td><td class="emi-col">₹20,60,123</td></tr><tr><td class="amt-col">35 Years</td><td>₹7,00,000</td><td>₹23,26,384</td><td class="emi-col">₹30,26,384</td></tr></tbody>
+</table>
+
+    <h2>PPF Maturity for 20 Years at Different Amounts</h2>
+    
+<table class="comparison-table">
+    <thead><tr><th>Yearly Deposit</th><th>Total Deposited</th><th>Interest Earned</th><th>Maturity Value</th></tr></thead>
+    <tbody><tr><td class="amt-col">₹500/yr</td><td>₹10,000</td><td>₹12,198</td><td class="emi-col">₹22,198</td></tr><tr><td class="amt-col">₹1,000/yr</td><td>₹20,000</td><td>₹24,388</td><td class="emi-col">₹44,388</td></tr><tr><td class="amt-col">₹2,000/yr</td><td>₹40,000</td><td>₹48,774</td><td class="emi-col">₹88,774</td></tr><tr><td class="amt-col">₹3,000/yr</td><td>₹60,000</td><td>₹73,165</td><td class="emi-col">₹1,33,165</td></tr><tr><td class="amt-col">₹5,000/yr</td><td>₹1,00,000</td><td>₹1,21,941</td><td class="emi-col">₹2,21,941</td></tr><tr><td class="amt-col">₹10,000/yr</td><td>₹2,00,000</td><td>₹2,43,888</td><td class="emi-col">₹4,43,888</td></tr><tr><td class="amt-col">₹12,000/yr</td><td>₹2,40,000</td><td>₹2,92,660</td><td class="emi-col">₹5,32,660</td></tr><tr><td class="amt-col">₹15,000/yr</td><td>₹3,00,000</td><td>₹3,65,832</td><td class="emi-col">₹6,65,832</td></tr><tr><td class="amt-col">₹20,000/yr</td><td>₹4,00,000</td><td>₹4,87,772</td><td class="emi-col">₹8,87,772</td></tr><tr><td class="amt-col">₹25,000/yr</td><td>₹5,00,000</td><td>₹6,09,717</td><td class="emi-col">₹11,09,717</td></tr><tr><td class="amt-col">₹30,000/yr</td><td>₹6,00,000</td><td>₹7,31,651</td><td class="emi-col">₹13,31,651</td></tr><tr><td class="amt-col">₹40,000/yr</td><td>₹8,00,000</td><td>₹9,75,547</td><td class="emi-col">₹17,75,547</td></tr><tr><td class="amt-col">₹50,000/yr</td><td>₹10,00,000</td><td>₹12,19,429</td><td class="emi-col">₹22,19,429</td></tr><tr><td class="amt-col">₹60,000/yr</td><td>₹12,00,000</td><td>₹14,63,315</td><td class="emi-col">₹26,63,315</td></tr><tr><td class="amt-col">₹70,000/yr</td><td>₹14,00,000</td><td>₹17,07,199</td><td class="emi-col">₹31,07,199</td></tr><tr><td class="amt-col">₹80,000/yr</td><td>₹16,00,000</td><td>₹19,51,081</td><td class="emi-col">₹35,51,081</td></tr><tr><td class="amt-col">₹90,000/yr</td><td>₹18,00,000</td><td>₹21,94,972</td><td class="emi-col">₹39,94,972</td></tr><tr><td class="amt-col">₹1,00,000/yr</td><td>₹20,00,000</td><td>₹24,38,858</td><td class="emi-col">₹44,38,858</td></tr><tr><td class="amt-col">₹1,20,000/yr</td><td>₹24,00,000</td><td>₹29,26,633</td><td class="emi-col">₹53,26,633</td></tr><tr><td class="amt-col">₹1,50,000/yr</td><td>₹30,00,000</td><td>₹36,58,287</td><td class="emi-col">₹66,58,287</td></tr></tbody>
+</table>
+</div>
+
+<!-- Ad: Above FAQ -->
+<div style="max-width:800px;margin:0 auto;padding:20px 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="faq-section"><h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>What is the maturity value of ₹20,000 yearly PPF investment for 20 years?</h3>
+        <p>If you invest ₹20,000 per year in PPF at 7.1% for 20 years, your maturity value will be ₹8,87,772. This includes ₹4,00,000 total deposits and ₹4,87,772 in tax-free interest.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How much tax can I save with ₹20,000 PPF investment?</h3>
+        <p>Deposits up to ₹1,50,000 per year qualify for Section 80C deduction. If you are in the 31.2% tax bracket (highest old regime), you can save approximately ₹6,240 in taxes every year.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How much should I invest monthly to deposit ₹20,000 per year in PPF?</h3>
+        <p>To invest ₹20,000 per year in PPF, you need to set aside approximately ₹1,667 per month. You can make deposits in up to 12 installments per financial year.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What happens after 20 years PPF maturity?</h3>
+        <p>A 20-year PPF investment means extending beyond the initial 15-year lock-in in 5-year blocks. After maturity, you can withdraw the full amount tax-free or continue extending in 5-year blocks.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Is PPF investment of ₹20,000/year better than FD?</h3>
+        <p>At 7.1% tax-free return, PPF significantly outperforms FDs for long-term investment. A comparable FD would need to offer 10.3% pre-tax returns (for 31.2% tax bracket) to match PPF's after-tax return. Over 20 years, this compounding advantage is substantial.</p>
+    </div></div>
+
+
+<div class="links-section">
+    <h2>PPF for 20 Years at Other Amounts</h2>
+    <div class="links-grid"><a href="/ppf-calculator-for-500-per-year-for-20-years">₹500/yr × 20 yrs<span class="link-sub">Maturity: ₹22,198</span></a><a href="/ppf-calculator-for-1k-per-year-for-20-years">₹1K/yr × 20 yrs<span class="link-sub">Maturity: ₹44,388</span></a><a href="/ppf-calculator-for-2k-per-year-for-20-years">₹2K/yr × 20 yrs<span class="link-sub">Maturity: ₹88,774</span></a><a href="/ppf-calculator-for-3k-per-year-for-20-years">₹3K/yr × 20 yrs<span class="link-sub">Maturity: ₹1,33,165</span></a><a href="/ppf-calculator-for-5k-per-year-for-20-years">₹5K/yr × 20 yrs<span class="link-sub">Maturity: ₹2,21,941</span></a><a href="/ppf-calculator-for-10k-per-year-for-20-years">₹10K/yr × 20 yrs<span class="link-sub">Maturity: ₹4,43,888</span></a><a href="/ppf-calculator-for-12k-per-year-for-20-years">₹12K/yr × 20 yrs<span class="link-sub">Maturity: ₹5,32,660</span></a><a href="/ppf-calculator-for-15k-per-year-for-20-years">₹15K/yr × 20 yrs<span class="link-sub">Maturity: ₹6,65,832</span></a><a href="/ppf-calculator-for-25k-per-year-for-20-years">₹25K/yr × 20 yrs<span class="link-sub">Maturity: ₹11,09,717</span></a><a href="/ppf-calculator-for-30k-per-year-for-20-years">₹30K/yr × 20 yrs<span class="link-sub">Maturity: ₹13,31,651</span></a><a href="/ppf-calculator-for-40k-per-year-for-20-years">₹40K/yr × 20 yrs<span class="link-sub">Maturity: ₹17,75,547</span></a><a href="/ppf-calculator-for-50k-per-year-for-20-years">₹50K/yr × 20 yrs<span class="link-sub">Maturity: ₹22,19,429</span></a></div>
+</div>
+<div class="links-section">
+    <h2>₹20K/Year PPF at Other Tenures</h2>
+    <div class="links-grid"><a href="/ppf-calculator-for-20k-per-year-for-15-years">₹20K/yr × 15 yrs<span class="link-sub">Maturity: ₹5,42,428</span></a><a href="/ppf-calculator-for-20k-per-year-for-25-years">₹20K/yr × 25 yrs<span class="link-sub">Maturity: ₹13,74,403</span></a><a href="/ppf-calculator-for-20k-per-year-for-30-years">₹20K/yr × 30 yrs<span class="link-sub">Maturity: ₹20,60,123</span></a><a href="/ppf-calculator-for-20k-per-year-for-35-years">₹20K/yr × 35 yrs<span class="link-sub">Maturity: ₹30,26,384</span></a></div>
+</div>
+<div class="links-section">
+    <h2>Compare PPF with Other Investments</h2>
+    <div class="links-grid"><a href="/ppf-vs-fd">PPF vs FD<span class="link-sub">6.5 - 7.5% | Low risk</span></a><a href="/ppf-vs-elss">PPF vs ELSS<span class="link-sub">12 - 15 (historical average)% | High (equity market linked) risk</span></a><a href="/ppf-vs-nps">PPF vs NPS<span class="link-sub">8 - 10 (historical average)% | Moderate (mix of equity, debt, government securities) risk</span></a><a href="/ppf-vs-ssas">PPF vs SSA<span class="link-sub">8.2 (current rate)% | Zero (Government backed) risk</span></a><a href="/ppf-vs-epf">PPF vs EPF<span class="link-sub">8.25 (FY 2023-24)% | Zero (Government backed) risk</span></a><a href="/ppf-vs-nsc">PPF vs NSC<span class="link-sub">7.7 (current rate)% | Zero (Government backed) risk</span></a><a href="/ppf-vs-rd">PPF vs RD<span class="link-sub">6.5 - 7.0% | Low risk</span></a></div>
+</div>
+
+<footer class="footer">
+    <p>Built by TUD Innovations Pvt Ltd. PPF calculations are based on the current interest rate of 7.1% p.a. compounded annually. Actual returns may vary based on government rate revisions.</p>
+    <p style="margin-top:8px"><a href="/privacy">Privacy Policy</a></p>
+</footer>
+
+<script>
+var PREFILL_AMOUNT = 20000;
+var PREFILL_RATE = 7.1;
+var PREFILL_TENURE = 20;
+
+var yearlySchedule = [];
+
+function formatCurrency(num) {
+    return new Intl.NumberFormat('en-IN').format(Math.round(num));
+}
+
+function formatCurrencyShort(num) {
+    num = Math.round(num);
+    if (num >= 10000000) return '\u20B9' + (num / 10000000).toFixed(2) + ' Cr';
+    if (num >= 100000) return '\u20B9' + (num / 100000).toFixed(2) + ' L';
+    return '\u20B9' + formatCurrency(num);
+}
+
+function getRawNumber(id) {
+    return parseInt(document.getElementById(id).value.replace(/[^0-9]/g, '')) || 0;
+}
+
+function formatAmountInput() {
+    var input = document.getElementById('yearlyDeposit');
+    var raw = input.value.replace(/[^0-9]/g, '');
+    if (raw) input.value = new Intl.NumberFormat('en-IN').format(parseInt(raw));
+    calculate();
+}
+
+function calculatePPF(yearlyDeposit, rate, years) {
+    var balance = 0;
+    var schedule = [];
+    for (var y = 1; y <= years; y++) {
+        balance += yearlyDeposit;
+        var interest = Math.round(balance * rate / 100);
+        balance += interest;
+        schedule.push({
+            year: y,
+            deposit: yearlyDeposit,
+            interest: interest,
+            balance: balance,
+            totalDeposited: yearlyDeposit * y
+        });
+    }
+    return {
+        maturity: balance,
+        totalDeposited: yearlyDeposit * years,
+        totalInterest: balance - (yearlyDeposit * years),
+        schedule: schedule
+    };
+}
+
+function drawPieChart(deposited, interest) {
+    var canvas = document.getElementById('pieChart');
+    if (!canvas) return;
+    var container = canvas.parentElement;
+    var size = container.offsetWidth;
+    canvas.width = size * 2; canvas.height = size * 2;
+    canvas.style.width = size + 'px'; canvas.style.height = size + 'px';
+    var ctx = canvas.getContext('2d');
+    ctx.scale(2, 2);
+    var cx = size / 2, cy = size / 2, outerR = size / 2 - 4, innerR = outerR * 0.62;
+    var total = deposited + interest;
+    if (total <= 0) return;
+    var depositAngle = (deposited / total) * Math.PI * 2, gap = 0.03;
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, -Math.PI / 2 + gap / 2, -Math.PI / 2 + depositAngle - gap / 2);
+    ctx.arc(cx, cy, innerR, -Math.PI / 2 + depositAngle - gap / 2, -Math.PI / 2 + gap / 2, true);
+    ctx.closePath(); ctx.fillStyle = '#f97316'; ctx.fill();
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, -Math.PI / 2 + depositAngle + gap / 2, -Math.PI / 2 + Math.PI * 2 - gap / 2);
+    ctx.arc(cx, cy, innerR, -Math.PI / 2 + Math.PI * 2 - gap / 2, -Math.PI / 2 + depositAngle + gap / 2, true);
+    ctx.closePath(); ctx.fillStyle = '#38bdf8'; ctx.fill();
+}
+
+function renderTable() {
+    var head = document.getElementById('tableHead');
+    var body = document.getElementById('tableBody');
+    head.innerHTML = '<tr><th>Year</th><th>Deposit</th><th>Interest</th><th>Balance</th></tr>';
+    body.innerHTML = yearlySchedule.map(function(r) {
+        return '<tr><td>Year ' + r.year + '</td><td>\u20B9' + formatCurrency(r.deposit) + '</td><td>\u20B9' + formatCurrency(r.interest) + '</td><td>\u20B9' + formatCurrency(r.balance) + '</td></tr>';
+    }).join('');
+}
+
+function calculate() {
+    var yearlyDeposit = getRawNumber('yearlyDeposit');
+    var rate = parseFloat(document.getElementById('interestRate').value) || 0;
+    var years = parseInt(document.getElementById('tenure').value) || 0;
+    if (yearlyDeposit <= 0 || years <= 0) return;
+    var result = calculatePPF(yearlyDeposit, rate, years);
+    document.getElementById('maturityValue').textContent = formatCurrencyShort(result.maturity);
+    document.getElementById('interestValue').textContent = formatCurrencyShort(result.totalInterest);
+    document.getElementById('depositedValue').textContent = formatCurrencyShort(result.totalDeposited);
+    drawPieChart(result.totalDeposited, result.totalInterest);
+    document.getElementById('chartTotal').textContent = formatCurrencyShort(result.maturity);
+    var depositPct = Math.round(result.totalDeposited / result.maturity * 100);
+    document.getElementById('legendDeposited').textContent = '\u20B9' + formatCurrency(result.totalDeposited);
+    document.getElementById('legendInterest').textContent = '\u20B9' + formatCurrency(result.totalInterest);
+    document.getElementById('legendDepositedPct').textContent = depositPct + '%';
+    document.getElementById('legendInterestPct').textContent = (100 - depositPct) + '%';
+    yearlySchedule = result.schedule;
+    renderTable();
+}
+
+function downloadPDF() {
+    if (yearlySchedule.length === 0) return;
+    var yearlyDeposit = getRawNumber('yearlyDeposit');
+    var rate = parseFloat(document.getElementById('interestRate').value) || 0;
+    var years = parseInt(document.getElementById('tenure').value) || 0;
+    var result = calculatePPF(yearlyDeposit, rate, years);
+    var pw = window.open('', '_blank');
+    pw.document.write('<!DOCTYPE html><html><head><title>PPF Investment Schedule - PPF Batao</title><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>body{font-family:\'Outfit\',sans-serif;color:#1a1a1a;line-height:1.6;padding:40px 50px;max-width:900px;margin:0 auto;font-size:13px}h1{font-family:\'Playfair Display\',serif;font-size:22px;margin-bottom:4px}.subtitle{color:#666;font-size:13px;margin-bottom:24px}.summary{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-bottom:24px}.summary-item{background:#f7f7f7;padding:12px 16px;border-radius:8px}.summary-item .s-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#666}.summary-item .s-value{font-size:18px;font-weight:700;margin-top:2px}.summary-item.highlight .s-value{color:#f97316}table{width:100%;border-collapse:collapse;margin-top:16px}th{text-align:right;padding:8px 10px;border-bottom:2px solid #ddd;font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:#666}th:first-child{text-align:left}td{padding:8px 10px;border-bottom:1px solid #eee;text-align:right;font-variant-numeric:tabular-nums}td:first-child{text-align:left;color:#666}.footer{margin-top:32px;padding-top:16px;border-top:1px solid #ddd;font-size:11px;color:#999;text-align:center}@media print{body{padding:20px}.summary-item{background:#f7f7f7;-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body><h1>PPF Investment Schedule</h1><div class="subtitle">Generated on ' + new Date().toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'}) + ' \u00B7 ppfbatao.com</div><div class="summary"><div class="summary-item highlight"><div class="s-label">Maturity Value</div><div class="s-value">\u20B9' + formatCurrency(result.maturity) + '</div></div><div class="summary-item"><div class="s-label">Total Deposited</div><div class="s-value">\u20B9' + formatCurrency(result.totalDeposited) + '</div></div><div class="summary-item"><div class="s-label">Total Interest</div><div class="s-value">\u20B9' + formatCurrency(result.totalInterest) + '</div></div><div class="summary-item"><div class="s-label">Tax Saved (Est.)</div><div class="s-value">\u20B9' + formatCurrency(Math.min(yearlyDeposit, 150000) * years * 0.312) + '</div></div></div><div style="font-size:13px;color:#666;margin-bottom:8px">Interest Rate: ' + rate + '% p.a. \u00B7 Tenure: ' + years + ' Years \u00B7 Yearly Deposit: \u20B9' + formatCurrency(yearlyDeposit) + '</div><h2 style="font-size:16px;margin-top:24px;margin-bottom:4px">Year-wise Breakdown</h2><table><thead><tr><th>Year</th><th>Deposit</th><th>Interest Earned</th><th>Cumulative Deposit</th><th>Balance</th></tr></thead><tbody>' + result.schedule.map(function(r){return '<tr><td>Year '+r.year+'</td><td>\u20B9'+formatCurrency(r.deposit)+'</td><td>\u20B9'+formatCurrency(r.interest)+'</td><td>\u20B9'+formatCurrency(r.totalDeposited)+'</td><td>\u20B9'+formatCurrency(r.balance)+'</td></tr>';}).join('') + '</tbody></table><div class="footer">Generated by PPF Batao (ppfbatao.com) \u00B7 Built by TUD Innovations Pvt Ltd<br>Note: Returns are 100% tax-free under EEE status. Calculations assume constant interest rate.</div><script>setTimeout(function(){window.print();window.close()},500)<\/script></body></html>');
+    pw.document.close();
+}
+
+// Init
+document.getElementById('yearlyDeposit').addEventListener('input', formatAmountInput);
+document.getElementById('interestRate').addEventListener('input', calculate);
+document.getElementById('tenure').addEventListener('input', calculate);
+
+document.querySelector('.btn-calculate').addEventListener('click', function() {
+    if (window.innerWidth < 900) document.getElementById('resultsPanel').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Prefill and calculate
+document.getElementById('yearlyDeposit').value = new Intl.NumberFormat('en-IN').format(PREFILL_AMOUNT);
+document.getElementById('interestRate').value = PREFILL_RATE;
+document.getElementById('tenure').value = PREFILL_TENURE;
+calculate();
+
+</script>
+
+<!-- Batao/Banao Cross-Linking Widget -->
+<script src="https://gstbatao.com/batao-banao-widget.js"></script>
+</body>
+</html>

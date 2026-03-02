@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "ppf-vs-fd",
+    "name": "Fixed Deposit (FD)",
+    "shortName": "FD",
+    "returnRate": "6.5 - 7.5",
+    "lockIn": "Flexible (7 days to 10 years)",
+    "taxOnReturns": "Taxable as per income slab",
+    "section80C": "Yes (5-year tax-saving FD only)",
+    "risk": "Low",
+    "liquidity": "High (premature withdrawal with penalty)",
+    "suitableFor": "Short to medium-term parking of funds",
+    "verdict": "PPF offers higher post-tax returns due to EEE status. FD is better for short-term needs and flexibility."
+  },
+  {
+    "slug": "ppf-vs-elss",
+    "name": "ELSS Mutual Funds",
+    "shortName": "ELSS",
+    "returnRate": "12 - 15 (historical average)",
+    "lockIn": "3 years",
+    "taxOnReturns": "LTCG above ₹1.25 lakh taxed at 12.5%",
+    "section80C": "Yes (up to ₹1.5 lakh)",
+    "risk": "High (equity market linked)",
+    "liquidity": "Low (3-year lock-in, then liquid)",
+    "suitableFor": "Higher risk appetite, long-term wealth creation",
+    "verdict": "ELSS offers potentially higher returns but with market risk. PPF is guaranteed and fully tax-free — ideal for conservative investors."
+  },
+  {
+    "slug": "ppf-vs-nps",
+    "name": "National Pension System (NPS)",
+    "shortName": "NPS",
+    "returnRate": "8 - 10 (historical average)",
+    "lockIn": "Till age 60",
+    "taxOnReturns": "Partially taxable (60% corpus tax-free, 40% must buy annuity)",
+    "section80C": "Yes (₹1.5L under 80C + ₹50K extra under 80CCD(1B))",
+    "risk": "Moderate (mix of equity, debt, government securities)",
+    "liquidity": "Very Low (locked till 60, partial withdrawal after 3 years)",
+    "suitableFor": "Retirement planning with additional tax benefit",
+    "verdict": "NPS offers additional ₹50K tax deduction and potentially higher returns. PPF is fully tax-free and more flexible with 15-year lock-in."
+  },
+  {
+    "slug": "ppf-vs-ssas",
+    "name": "Sukanya Samriddhi Account (SSA)",
+    "shortName": "SSA",
+    "returnRate": "8.2 (current rate)",
+    "lockIn": "21 years (partial at 18 for education)",
+    "taxOnReturns": "Fully tax-free (EEE)",
+    "section80C": "Yes (up to ₹1.5 lakh)",
+    "risk": "Zero (Government backed)",
+    "liquidity": "Very Low (locked for 21 years)",
+    "suitableFor": "Girl child education and marriage planning",
+    "verdict": "SSA has a higher interest rate and EEE status like PPF, but is only for girl child. PPF is available to everyone with shorter lock-in."
+  },
+  {
+    "slug": "ppf-vs-epf",
+    "name": "Employee Provident Fund (EPF)",
+    "shortName": "EPF",
+    "returnRate": "8.25 (FY 2023-24)",
+    "lockIn": "Till retirement (partial withdrawal allowed)",
+    "taxOnReturns": "Tax-free if withdrawn after 5 years of service",
+    "section80C": "Yes (employee contribution up to ₹1.5 lakh)",
+    "risk": "Zero (Government backed)",
+    "liquidity": "Low (linked to employment, partial withdrawal for specific purposes)",
+    "suitableFor": "Salaried employees for retirement savings",
+    "verdict": "EPF has higher rate but is only for salaried employees. PPF is voluntary and available to everyone including self-employed."
+  },
+  {
+    "slug": "ppf-vs-nsc",
+    "name": "National Savings Certificate (NSC)",
+    "shortName": "NSC",
+    "returnRate": "7.7 (current rate)",
+    "lockIn": "5 years",
+    "taxOnReturns": "Interest taxable, but reinvested interest qualifies for 80C",
+    "section80C": "Yes (up to ₹1.5 lakh)",
+    "risk": "Zero (Government backed)",
+    "liquidity": "Low (5-year lock-in, no premature withdrawal normally)",
+    "suitableFor": "Medium-term guaranteed returns with tax benefit",
+    "verdict": "NSC has shorter lock-in and slightly higher rate, but interest is taxable. PPF's EEE status makes it better for long-term tax-free growth."
+  },
+  {
+    "slug": "ppf-vs-rd",
+    "name": "Recurring Deposit (RD)",
+    "shortName": "RD",
+    "returnRate": "6.5 - 7.0",
+    "lockIn": "Flexible (6 months to 10 years)",
+    "taxOnReturns": "Taxable as per income slab",
+    "section80C": "No",
+    "risk": "Low",
+    "liquidity": "Moderate (premature closure with penalty)",
+    "suitableFor": "Regular monthly savings with guaranteed returns",
+    "verdict": "RD offers flexibility in tenure but returns are fully taxable and no 80C benefit. PPF is far superior for long-term tax-free wealth building."
+  }
+]
