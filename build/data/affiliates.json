@@ -1,0 +1,168 @@
+{
+  "pages": [
+    {
+      "slug": "ppf-vs-elss",
+      "title": "PPF vs ELSS 2026 \u2014 Which Tax Saving Investment is Better? | PPF Batao",
+      "description": "Compare PPF vs ELSS in 2026. Side-by-side analysis of returns, lock-in period, risk, tax benefits & liquidity. Find which 80C investment suits your goals.",
+      "keywords": "ppf vs elss, ppf vs elss 2026, ppf or elss which is better, elss vs ppf comparison, tax saving investment comparison",
+      "heroTitle": "PPF vs ELSS",
+      "heroSub": "Which Section 80C tax-saving investment is right for you? Compare returns, risk, lock-in & tax treatment side by side.",
+      "topPicks": [
+        {
+          "name": "PPF (Public Provident Fund)",
+          "badge": "Best for Safety",
+          "returns": "7.1%",
+          "returnsLabel": "p.a. (guaranteed)",
+          "note": "Government-backed with zero risk. Fully tax-free returns under EEE status. Ideal for conservative investors who want guaranteed, stable wealth building over 15+ years.",
+          "features": [
+            "Guaranteed 7.1% p.a. returns",
+            "Fully tax-free (EEE status)",
+            "Government of India backed",
+            "15-year lock-in with partial withdrawal from Year 7"
+          ],
+          "ctaText": "Calculate PPF Returns",
+          "ctaLink": "/ppf-calculator"
+        },
+        {
+          "name": "Mirae Asset Tax Saver Fund",
+          "badge": "Best for Returns",
+          "returns": "~18%",
+          "returnsLabel": "p.a. (5Y avg, not guaranteed)",
+          "note": "Top-performing ELSS fund with consistent returns. Only 3-year lock-in period. LTCG above \u20b91.25L taxed at 12.5%. Best for aggressive investors comfortable with equity risk.",
+          "features": [
+            "Historical returns of 15-20% CAGR",
+            "Shortest lock-in among 80C options (3 years)",
+            "SIP starting from \u20b9500/month",
+            "Professional fund management"
+          ],
+          "ctaText": "Invest Now",
+          "ctaLink": "#PLACEHOLDER"
+        },
+        {
+          "name": "Axis Long Term Equity Fund",
+          "badge": "Most Consistent",
+          "returns": "~15%",
+          "returnsLabel": "p.a. (5Y avg, not guaranteed)",
+          "note": "Known for lower volatility compared to peers. Good risk-adjusted returns over long periods. Suitable for moderate-risk investors looking for better returns than fixed income.",
+          "features": [
+            "Lower volatility vs category average",
+            "Strong track record since 2009",
+            "SIP starting from \u20b9500/month",
+            "Diversified across large & mid-cap stocks"
+          ],
+          "ctaText": "Invest Now",
+          "ctaLink": "#PLACEHOLDER"
+        }
+      ],
+      "comparisonTable": {
+        "headers": ["Factor", "PPF", "ELSS"],
+        "rows": [
+          ["Returns", "7.1% p.a. (guaranteed)", "12-18% p.a. (market-linked, not guaranteed)"],
+          ["Lock-in Period", "15 years", "3 years"],
+          ["Risk Level", "Zero (Government backed)", "High (Equity market risk)"],
+          ["Tax on Investment", "Deduction under 80C up to \u20b91.5L", "Deduction under 80C up to \u20b91.5L"],
+          ["Tax on Returns", "Fully tax-free (EEE)", "LTCG above \u20b91.25L taxed at 12.5%"],
+          ["Liquidity", "Partial withdrawal from Year 7; loan from Year 3", "Fully liquid after 3-year lock-in"],
+          ["Minimum Investment", "\u20b9500/year", "\u20b9500 (lump sum or SIP)"],
+          ["Maximum Investment", "\u20b91,50,000/year", "No upper limit (80C benefit up to \u20b91.5L)"],
+          ["Ideal For", "Conservative investors, risk-averse savers", "Aggressive investors, long-term wealth creation"]
+        ]
+      },
+      "ctaTitle": "Calculate Your PPF Returns",
+      "ctaSub": "See exactly how much your PPF investment will grow over 15, 20, 25 or 30 years with our free calculator.",
+      "ctaLink": "/ppf-calculator",
+      "ctaButtonText": "Open PPF Calculator",
+      "faqs": [
+        { "q": "Is PPF better than ELSS for tax saving?", "a": "Both PPF and ELSS qualify for Section 80C deduction up to \u20b91.5 lakh. PPF is better if you want guaranteed, completely tax-free returns with zero risk. ELSS is better if you want potentially higher returns and can tolerate equity market volatility. Your choice depends on your risk appetite and investment horizon." },
+        { "q": "Can I invest in both PPF and ELSS?", "a": "Yes, you can invest in both PPF and ELSS. However, the combined Section 80C deduction limit is \u20b91,50,000 per year. Many financial advisors recommend splitting your 80C allocation \u2014 for example, \u20b975,000 in PPF for safety and \u20b975,000 in ELSS for growth potential." },
+        { "q": "What are the returns of PPF vs ELSS in 2026?", "a": "PPF currently offers a guaranteed 7.1% p.a., compounded annually, which is fully tax-free. ELSS returns depend on the stock market \u2014 historical 5-year average returns for top ELSS funds range from 12-18% CAGR, but these are not guaranteed and can be negative in bad years." },
+        { "q": "Which has a shorter lock-in \u2014 PPF or ELSS?", "a": "ELSS has a much shorter lock-in of just 3 years, making it the most liquid 80C investment option. PPF has a 15-year lock-in, though partial withdrawals are allowed from the 7th year. If liquidity is your priority, ELSS is clearly better." },
+        { "q": "Is ELSS risky compared to PPF?", "a": "Yes, ELSS invests in equity markets and carries significant risk \u2014 your investment can lose value in the short term. PPF is backed by the Government of India with guaranteed returns and zero risk. However, over a 10-15 year horizon, ELSS has historically delivered significantly higher returns than PPF." },
+        { "q": "What happens to PPF and ELSS at maturity?", "a": "PPF matures after 15 years, and the entire maturity amount (principal + interest) is fully tax-free. ELSS units can be redeemed after 3 years. Long-term capital gains above \u20b91.25 lakh on ELSS are taxed at 12.5%. Below \u20b91.25 lakh, ELSS gains are also tax-free." }
+      ]
+    },
+    {
+      "slug": "best-tax-saving-investments",
+      "title": "Best Tax Saving Investments Under Section 80C \u2014 2026 Guide | PPF Batao",
+      "description": "Compare all Section 80C tax saving investments in 2026. PPF, ELSS, NPS, NSC, FD, SSY, ULIP & more. Find the best 80C option for guaranteed returns, high growth or retirement.",
+      "keywords": "best tax saving investments 2026, section 80c investments, 80c deduction options, tax saving options india, ppf vs elss vs nps vs fd",
+      "heroTitle": "Best Tax Saving Investments Under 80C",
+      "heroSub": "Complete comparison of all Section 80C options in 2026. Find the right tax-saving investment based on your goals, risk appetite, and time horizon.",
+      "topPicks": [
+        {
+          "name": "PPF (Public Provident Fund)",
+          "badge": "Best Guaranteed Returns",
+          "returns": "7.1%",
+          "returnsLabel": "p.a. (guaranteed, tax-free)",
+          "note": "The gold standard for safe, tax-free investment. Government-backed EEE status means your deposits, interest earned, and maturity amount are ALL tax-free. Best for anyone who prioritises capital safety.",
+          "features": [
+            "Guaranteed 7.1% returns, zero risk",
+            "Complete EEE tax exemption",
+            "\u20b9500 to \u20b91,50,000 annual investment",
+            "Partial withdrawal from Year 7"
+          ],
+          "ctaText": "Calculate PPF Returns",
+          "ctaLink": "/ppf-calculator"
+        },
+        {
+          "name": "ELSS Mutual Funds",
+          "badge": "Best for High Returns",
+          "returns": "12-18%",
+          "returnsLabel": "p.a. (historical avg, not guaranteed)",
+          "note": "Equity-linked savings with the shortest lock-in of just 3 years. Top funds like Mirae Asset and Axis Long Term have delivered 15-18% CAGR over 5 years. Best for investors comfortable with market risk.",
+          "features": [
+            "Shortest lock-in among 80C options (3 years)",
+            "Highest return potential of all 80C investments",
+            "SIP starting from \u20b9500/month",
+            "Diversified equity portfolio with professional management"
+          ],
+          "ctaText": "Explore ELSS Funds",
+          "ctaLink": "#PLACEHOLDER"
+        },
+        {
+          "name": "NPS (National Pension System)",
+          "badge": "Best for Retirement",
+          "returns": "8-10%",
+          "returnsLabel": "p.a. (historical avg)",
+          "note": "Extra \u20b950,000 deduction under Section 80CCD(1B) over and above 80C limit. Mix of equity, corporate bonds, and government securities. Best for long-term retirement planning with additional tax benefit.",
+          "features": [
+            "Additional \u20b950K deduction under 80CCD(1B)",
+            "Total tax saving up to \u20b92 lakh/year",
+            "Mix of equity + debt for balanced growth",
+            "60% corpus tax-free at retirement"
+          ],
+          "ctaText": "Open NPS Account",
+          "ctaLink": "#PLACEHOLDER"
+        }
+      ],
+      "comparisonTable": {
+        "headers": ["Investment", "Returns", "Lock-in", "Risk Level", "Tax on Maturity", "Min Amount"],
+        "rows": [
+          ["PPF", "7.1% p.a.", "15 years", "Zero", "Fully tax-free (EEE)", "\u20b9500/year"],
+          ["ELSS", "12-18% p.a.*", "3 years", "High", "LTCG >1.25L at 12.5%", "\u20b9500"],
+          ["NSC", "7.7% p.a.", "5 years", "Zero", "Interest taxable", "\u20b91,000"],
+          ["Tax-Saving FD", "6.5-7.5% p.a.", "5 years", "Low", "Interest taxable", "\u20b91,000"],
+          ["NPS", "8-10% p.a.*", "Till age 60", "Moderate", "60% tax-free, 40% annuity", "\u20b9500/year"],
+          ["SSY", "8.2% p.a.", "21 years", "Zero", "Fully tax-free (EEE)", "\u20b9250/year"],
+          ["ULIP", "8-12% p.a.*", "5 years", "Moderate-High", "Tax-free if annual premium <2.5L", "\u20b91,000/year"],
+          ["Life Insurance", "4-6% p.a.", "Varies", "Low", "Tax-free under Sec 10(10D)", "Varies"]
+        ]
+      },
+      "tableFootnote": "* Market-linked returns are historical averages and not guaranteed. Actual returns may vary.",
+      "ctaTitle": "Calculate Your PPF Returns",
+      "ctaSub": "Use our free PPF calculator to see exact maturity value, interest earned, and year-wise breakdown for any deposit amount.",
+      "ctaLink": "/ppf-calculator",
+      "ctaButtonText": "Open PPF Calculator",
+      "faqs": [
+        { "q": "What is Section 80C and how much can I save?", "a": "Section 80C of the Income Tax Act allows individuals to claim deductions up to \u20b91,50,000 per financial year from their taxable income. This means if you are in the 30% tax bracket, you can save up to \u20b946,800 in taxes (including cess). Investments like PPF, ELSS, NSC, NPS, tax-saving FD, and life insurance premium qualify under 80C." },
+        { "q": "Which is the best tax saving investment for 2026?", "a": "The best 80C investment depends on your goals: PPF for guaranteed tax-free returns with zero risk, ELSS for highest growth potential with 3-year lock-in, and NPS for retirement planning with extra \u20b950K deduction. For most people, a combination of PPF + ELSS provides the best balance of safety and growth." },
+        { "q": "Can I invest in multiple 80C options?", "a": "Yes, you can invest in multiple 80C instruments. The total deduction across all 80C investments is capped at \u20b91,50,000 per year. Many investors split their allocation \u2014 for example, \u20b975K in PPF + \u20b975K in ELSS, or \u20b950K each in PPF, ELSS, and NPS." },
+        { "q": "Which 80C investment gives the highest returns?", "a": "ELSS mutual funds have historically delivered the highest returns among 80C investments at 12-18% CAGR over 5 years. However, these returns are market-linked and not guaranteed. For guaranteed returns, PPF offers 7.1% (fully tax-free) and NSC offers 7.7% (taxable interest)." },
+        { "q": "What is the safest tax saving investment?", "a": "PPF, NSC, SSY, and EPF are the safest 80C investments as they are all government-backed with guaranteed returns. Among these, PPF offers the best combination of safety + tax efficiency due to its EEE (Exempt-Exempt-Exempt) status, meaning deposits, interest, and maturity are all tax-free." },
+        { "q": "Is NPS better than PPF for tax saving?", "a": "NPS offers an additional \u20b950,000 deduction under Section 80CCD(1B) over and above the \u20b91.5L limit of 80C, potentially saving \u20b915,600 extra in taxes (30% bracket). However, NPS is locked till age 60 and partially taxable. PPF is more flexible with EEE status. For maximum tax saving, invest in both." },
+        { "q": "What about Sukanya Samriddhi Yojana (SSY)?", "a": "SSY is an excellent option if you have a girl child under 10 years of age. It offers 8.2% p.a. (higher than PPF) with full EEE tax-free status. The 21-year lock-in is long, but partial withdrawal is allowed after the girl turns 18 for education expenses." },
+        { "q": "Should I invest in ULIP for tax saving?", "a": "ULIPs are generally not recommended solely for tax saving. They have high charges (mortality, fund management, administration) that eat into returns. ELSS offers similar equity exposure with lower costs and shorter lock-in. ULIPs may suit those who specifically want insurance + investment in one product." }
+      ]
+    }
+  ]
+}

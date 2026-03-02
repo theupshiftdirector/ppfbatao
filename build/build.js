@@ -108,6 +108,8 @@ function calculatePPF(yearlyDeposit, rate, years) {
 const ppfRules = JSON.parse(fs.readFileSync(path.join(DATA, 'ppf-rules.json'), 'utf8'));
 const comparisons = JSON.parse(fs.readFileSync(path.join(DATA, 'comparisons.json'), 'utf8'));
 const layoutTemplate = fs.readFileSync(path.join(TEMPLATES, 'layout.html'), 'utf8');
+const affiliateData = JSON.parse(fs.readFileSync(path.join(DATA, 'affiliates.json'), 'utf8'));
+const affiliateTemplate = fs.readFileSync(path.join(TEMPLATES, 'affiliate.html'), 'utf8');
 
 // ─── Calculator JS (shared across all pages) ────────────────────────────────
 const CALCULATOR_JS = `
@@ -1013,12 +1015,211 @@ function generateMonthlyPage(monthlyAmount) {
   addSitemapEntry(slug, 0.6);
 }
 
+// ─── Affiliate page builders ─────────────────────────────────────────────────
+
+function breadcrumbHTML(items) {
+  const links = items.map((item, i) => {
+    if (i === items.length - 1) return `<span style="color:var(--text)">${item.label}</span>`;
+    return `<a href="${item.href}">${item.label}</a>`;
+  });
+  return `<nav class="breadcrumb">${links.join('<span>\u203A</span>')}</nav>`;
+}
+
+function breadcrumbSchemaJSON(items) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": item.label,
+      ...(item.href ? { "item": DOMAIN + item.href } : {})
+    }))
+  });
+}
+
+function linksGridHTML(title, links) {
+  if (!links.length) return '';
+  const items = links.map(l => `<a href="${l.href}">${l.label}${l.sub ? '<span class="link-sub">' + l.sub + '</span>' : ''}</a>`).join('');
+  return `
+<section class="links-section">
+    <h2>${title}</h2>
+    <div class="links-grid">${items}</div>
+</section>`;
+}
+
+function buildAffiliatePage(opts) {
+  const { title, description, keywords, canonicalPath, breadcrumb, breadcrumbItems, content, faqSection, linksSection, disclaimer, jsonLd } = opts;
+
+  let allJsonLd = '';
+  if (jsonLd) allJsonLd += `<script type="application/ld+json">\n${jsonLd}\n</script>\n`;
+  if (breadcrumbItems) allJsonLd += `    <script type="application/ld+json">\n${breadcrumbSchemaJSON(breadcrumbItems)}\n</script>`;
+
+  const verificationTag = GOOGLE_VERIFICATION ? `<meta name="google-site-verification" content="${GOOGLE_VERIFICATION}">` : '';
+
+  let html = affiliateTemplate
+    .replace(/{{PAGE_TITLE}}/g, title)
+    .replace(/{{META_DESCRIPTION}}/g, description)
+    .replace(/{{META_KEYWORDS}}/g, keywords || '')
+    .replace(/{{CANONICAL_PATH}}/g, canonicalPath)
+    .replace('{{JSON_LD}}', allJsonLd)
+    .replace('{{GOOGLE_VERIFICATION}}', verificationTag)
+    .replace('{{BREADCRUMB}}', breadcrumb || '')
+    .replace('{{CONTENT}}', content)
+    .replace('{{FAQ_SECTION}}', faqSection || '')
+    .replace('{{LINKS_SECTION}}', linksSection || '')
+    .replace('{{DISCLAIMER}}', disclaimer || '');
+
+  return html;
+}
+
+function generateAffiliatePage(pageData) {
+  const { slug, title, description, keywords, heroTitle, heroSub, topPicks, comparisonTable, tableFootnote, ctaTitle, ctaSub, ctaLink, ctaButtonText, faqs } = pageData;
+
+  // --- Top Picks ---
+  const picksHTML = topPicks.map((pick, i) => {
+    const featuresHTML = pick.features.map(f => `<li>${f}</li>`).join('');
+    return `
+    <div class="pick-card${i === 0 ? ' featured' : ''}">
+        ${pick.badge ? `<div class="pick-badge">${pick.badge}</div>` : ''}
+        <div class="pick-rank">#${i + 1} Pick</div>
+        <div class="pick-name">${pick.name}</div>
+        <div class="pick-rate">${pick.returns} <small>${pick.returnsLabel}</small></div>
+        <p class="pick-note">${pick.note}</p>
+        <ul class="pick-features">
+            ${featuresHTML}
+        </ul>
+        <a href="${pick.ctaLink}" ${pick.ctaLink.startsWith('#') ? 'rel="nofollow sponsored"' : ''} class="pick-cta">${pick.ctaText} \u2192</a>
+    </div>`;
+  }).join('');
+
+  // --- Comparison Table ---
+  const tableHeaders = comparisonTable.headers.map(h => `<th>${h}</th>`).join('');
+  const tableRows = comparisonTable.rows.map(row => {
+    const cells = row.map((cell, i) => {
+      if (i === 0) return `<td class="factor-col">${cell}</td>`;
+      return `<td>${cell}</td>`;
+    }).join('');
+    return `<tr>${cells}</tr>`;
+  }).join('');
+
+  const content = `
+<section class="page-hero">
+    <h1><span class="hl">${heroTitle}</span> \u2014 ${YEAR} Guide</h1>
+    <p>${heroSub}</p>
+    <div class="updated">Updated: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}</div>
+</section>
+
+<!-- Ad: Below Hero -->
+<div style="max-width:1200px;margin:0 auto 24px;padding:0 24px;text-align:center;">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8235932614579966" data-ad-slot="auto" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="top-picks">
+    <h2 class="top-picks-title">Our Top Picks</h2>
+    <div class="picks-grid">
+        ${picksHTML}
+    </div>
+</section>
+
+<section class="comparison-section">
+    <h2>Full Comparison Table</h2>
+    ${tableFootnote ? `<p style="color:var(--text-muted);font-size:14px;margin-bottom:16px;">${tableFootnote}</p>` : ''}
+    <div class="table-container">
+        <table class="comparison-table">
+            <thead>
+                <tr>${tableHeaders}</tr>
+            </thead>
+            <tbody>
+                ${tableRows}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="calc-cta">
+    <div class="calc-cta-box">
+        <h3>${ctaTitle}</h3>
+        <p>${ctaSub}</p>
+        <a href="${ctaLink}" class="calc-cta-btn">${ctaButtonText} \u2192</a>
+    </div>
+</section>`;
+
+  // --- Internal links ---
+  const otherAffiliateLinks = affiliateData.pages
+    .filter(p => p.slug !== slug)
+    .map(p => ({
+      href: `/${p.slug}`,
+      label: p.heroTitle,
+    }));
+
+  const comparisonLinks = comparisons.map(c => ({
+    href: `/${c.slug}`,
+    label: `PPF vs ${c.shortName}`,
+  }));
+
+  const calculatorLinks = [
+    { href: '/ppf-calculator', label: 'PPF Calculator' },
+    ...TENURES.map(t => ({ href: `/ppf-calculator-for-${t}-years`, label: `PPF for ${t} Years` })),
+  ];
+
+  const links =
+    linksGridHTML('More Comparisons', otherAffiliateLinks) +
+    linksGridHTML('PPF vs Other Investments', comparisonLinks) +
+    linksGridHTML('PPF Calculators', calculatorLinks);
+
+  // --- FAQ ---
+  const faqItems = faqs.map(f => `
+    <div class="faq-item">
+        <h3>${f.q}</h3>
+        <p>${f.a}</p>
+    </div>`).join('');
+
+  const faqSection = `
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    ${faqItems}
+</section>`;
+
+  // --- Disclaimer ---
+  const disclaimer = `
+<div class="disclaimer">
+    <div class="disclaimer-box">
+        <strong>Disclaimer:</strong> Investment details shown on this page are sourced from official government notifications and fund house websites. Returns for market-linked instruments (ELSS, NPS, ULIP) are historical and not guaranteed. PPF interest rate is subject to quarterly government review. We may earn a referral commission when you invest through links on this page, at no extra cost to you. This does not affect our rankings or recommendations. Last verified: ${new Date().toLocaleString('en-IN', { month: 'long', year: 'numeric' })}.
+    </div>
+</div>`;
+
+  const bcItems = [
+    { href: '/', label: 'Home' },
+    { label: heroTitle },
+  ];
+
+  const html = buildAffiliatePage({
+    title,
+    description,
+    keywords,
+    canonicalPath: slug,
+    breadcrumb: breadcrumbHTML(bcItems),
+    breadcrumbItems: bcItems,
+    content,
+    faqSection,
+    linksSection: links,
+    disclaimer,
+    jsonLd: faqSchemaJSON(faqs),
+  });
+
+  fs.writeFileSync(path.join(DIST, slug + '.html'), html);
+  addSitemapEntry(slug, 0.8);
+}
+
 // ─── Generate sitemap & robots ───────────────────────────────────────────────
 function generateSitemap() {
-  const urls = [
-    { path: '', priority: 1.0, changefreq: 'weekly' },
-    ...sitemapEntries
-  ];
+  // Deduplicate by path (later entries override earlier ones for same path)
+  const seen = new Map();
+  seen.set('', { path: '', priority: 1.0, changefreq: 'weekly' });
+  sitemapEntries.forEach(e => seen.set(e.path, e));
+  const urls = Array.from(seen.values());
 
   const today = new Date().toISOString().split('T')[0];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -1095,12 +1296,18 @@ let compCount = 0;
 comparisons.forEach(c => { generateComparisonPage(c); compCount++; });
 console.log(`   \u2192 ${compCount} comparison pages`);
 
-// 8. Sitemap + robots.txt
+// 8. Affiliate / comparison pages
+console.log('\uD83D\uDCB0 Generating affiliate pages...');
+let affiliateCount = 0;
+affiliateData.pages.forEach(p => { generateAffiliatePage(p); affiliateCount++; });
+console.log(`   \u2192 ${affiliateCount} affiliate pages`);
+
+// 9. Sitemap + robots.txt
 console.log('\n\uD83D\uDDFA\uFE0F  Generating sitemap.xml and robots.txt...');
 generateSitemap();
 
 // Summary
-const totalPages = 1 + tenureCount + amountCount + amtTenureCount + monthlyCount + compCount + 2; // +2 for index + privacy
+const totalPages = 1 + tenureCount + amountCount + amtTenureCount + monthlyCount + compCount + affiliateCount + 2; // +2 for index + privacy
 console.log(`\n\u2705 Build complete!`);
 console.log(`   Total pages: ${totalPages} generated`);
 console.log(`   Sitemap entries: ${sitemapEntries.length + 1}`);
