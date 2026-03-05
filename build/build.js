@@ -476,7 +476,7 @@ function buildPage({ title, description, keywords, canonicalPath, content, bread
     .replace(/{{PAGE_TITLE}}/g, title)
     .replace(/{{META_DESCRIPTION}}/g, description)
     .replace(/{{META_KEYWORDS}}/g, keywords || '')
-    .replace('{{CANONICAL_PATH}}', canonicalPath)
+    .replace(/{{CANONICAL_PATH}}/g, canonicalPath)
     .replace('{{GOOGLE_VERIFICATION}}', gv)
     .replace('{{JSON_LD}}', allJsonLd)
     .replace('{{BREADCRUMB}}', breadcrumb || '')
@@ -1309,6 +1309,17 @@ console.log('\uD83D\uDCC4 Copying static files...');
   if (fs.existsSync(src)) fs.copyFileSync(src, path.join(DIST, f));
 });
 
+// ─── Copy blog posts to dist ───────────────────────────────────────────────
+const blogSrcDir = path.join(ROOT, 'blog');
+if (fs.existsSync(blogSrcDir)) {
+  const blogDistDir = path.join(DIST, 'blog');
+  fs.mkdirSync(blogDistDir, { recursive: true });
+  fs.readdirSync(blogSrcDir).forEach(f => {
+    fs.copyFileSync(path.join(blogSrcDir, f), path.join(blogDistDir, f));
+  });
+  console.log('📝 Copied ' + fs.readdirSync(blogSrcDir).length + ' blog pages to dist/blog/');
+}
+
 // 2. Main calculator page
 console.log('\uD83D\uDCCA Generating main PPF calculator page...');
 generateMainCalculatorPage();
@@ -1356,6 +1367,14 @@ console.log(`   \u2192 ${affiliateCount} affiliate pages`);
 
 // 9. Sitemap + robots.txt
 console.log('\n\uD83D\uDDFA\uFE0F  Generating sitemap.xml and robots.txt...');
+// Add blog URLs to sitemap
+const blogDistCheck = path.join(DIST, 'blog');
+if (fs.existsSync(blogDistCheck)) {
+  fs.readdirSync(blogDistCheck).filter(f => f.endsWith('.html') && f !== 'index.html').forEach(f => {
+    sitemapEntries.push({ path: 'blog/' + f.replace('.html', ''), priority: 0.7, changefreq: 'monthly' });
+  });
+}
+
 generateSitemap();
 
 // Summary
