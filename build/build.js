@@ -1299,7 +1299,7 @@ ensureDir(DIST);
 
 // 1. Copy static files
 console.log('\uD83D\uDCC4 Copying static files...');
-['ads.txt'].forEach(f => {
+['ads.txt', '855619084ca64ac9afe95c0b2b58894d.txt'].forEach(f => {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) fs.copyFileSync(src, path.join(DIST, f));
 });
