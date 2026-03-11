@@ -1314,10 +1314,22 @@ const blogSrcDir = path.join(ROOT, 'blog');
 if (fs.existsSync(blogSrcDir)) {
   const blogDistDir = path.join(DIST, 'blog');
   fs.mkdirSync(blogDistDir, { recursive: true });
+  let blogCount = 0;
   fs.readdirSync(blogSrcDir).forEach(f => {
-    fs.copyFileSync(path.join(blogSrcDir, f), path.join(blogDistDir, f));
+    const srcPath = path.join(blogSrcDir, f);
+    const destPath = path.join(blogDistDir, f);
+    if (fs.statSync(srcPath).isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true });
+      fs.readdirSync(srcPath).forEach(sub => {
+        fs.copyFileSync(path.join(srcPath, sub), path.join(destPath, sub));
+      });
+      blogCount++;
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+      blogCount++;
+    }
   });
-  console.log('📝 Copied ' + fs.readdirSync(blogSrcDir).length + ' blog pages to dist/blog/');
+  console.log('📝 Copied ' + blogCount + ' blog pages to dist/blog/');
 }
 
 // 2. Main calculator page
@@ -1370,8 +1382,13 @@ console.log('\n\uD83D\uDDFA\uFE0F  Generating sitemap.xml and robots.txt...');
 // Add blog URLs to sitemap
 const blogDistCheck = path.join(DIST, 'blog');
 if (fs.existsSync(blogDistCheck)) {
-  fs.readdirSync(blogDistCheck).filter(f => f.endsWith('.html') && f !== 'index.html').forEach(f => {
-    sitemapEntries.push({ path: 'blog/' + f.replace('.html', ''), priority: 0.7, changefreq: 'monthly' });
+  fs.readdirSync(blogDistCheck).forEach(f => {
+    const fullPath = path.join(blogDistCheck, f);
+    if (f.endsWith('.html') && f !== 'index.html') {
+      sitemapEntries.push({ path: 'blog/' + f.replace('.html', ''), priority: 0.7, changefreq: 'monthly' });
+    } else if (fs.statSync(fullPath).isDirectory() && fs.existsSync(path.join(fullPath, 'index.html'))) {
+      sitemapEntries.push({ path: 'blog/' + f, priority: 0.7, changefreq: 'monthly' });
+    }
   });
 }
 
